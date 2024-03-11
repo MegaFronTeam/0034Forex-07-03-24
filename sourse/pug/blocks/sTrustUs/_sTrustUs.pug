@@ -1,0 +1,25 @@
+mixin sTrustUs(data)
+	// start sTrustUs
+	+b.SECTION.sTrustUs.section#sTrustUs&attributes(attributes)
+		+e.container.container-fluid
+			+e.wrap
+				img(src='img/coin.png' alt='').img
+				+e.inner-wrap
+					+b.section-title
+						h3 Почему нам 
+							span можно верить
+					+e.row.row
+						mixin item(icon, text)
+							+e.col.col-12
+								+e.item
+									+img(`img/svg/${icon}`)
+									+e.content
+										block
+										p!= text
+						+item('sTrustUs-icon-1.svg', 'Спрячьте Вашу банковскую карту. Вам не&nbsp;нужно вкладывать деньги, инвестировать в&nbsp;сомнительные проекты и&nbsp;вообще что-либо покупать, чтобы пройти у&nbsp;нас обучение')
+							h4 Это действительно #[span бесплатно]
+						+item('sTrustUs-icon-2.svg', 'И&nbsp;ни&nbsp;за&nbsp;что не&nbsp;отдадим им&nbsp;Ваш e-mail или номер телефона. Вы&nbsp;не&nbsp;увидите у&nbsp;нас рекламу брокеров, потому что мы&nbsp;не аффилированы ни&nbsp;с&nbsp;одним из&nbsp;них и&nbsp;не&nbsp;зарабатываем на&nbsp;этом')
+							h4 Мы #[span не «кормим»] брокеров
+						+item('sTrustUs-icon-3.svg', 'Изучив сегодня этот курс, Вы&nbsp;не&nbsp;заработаете завтра миллион долларов. И&nbsp;мы&nbsp;Вам этого не&nbsp;обещаем. А&nbsp;вот делать по&nbsp;500 рублей за&nbsp;каждые полчаса торговли&nbsp;&mdash; вполне реально!')
+							h4 Мы #[span реалисты] (и Вам советуем)
+	// end sTrustUs

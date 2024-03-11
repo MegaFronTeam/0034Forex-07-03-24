@@ -1,0 +1,46 @@
+extends ../layout/main.pug
+
+include ../blocks/header/_header.pug
+include ../blocks/topLine/_topLine.pug
+include ../blocks/top-nav/_top-nav.pug 
+include ../blocks/headerBlock/_headerBlock.pug
+include ../blocks/sForm/_sForm.pug
+include ../blocks/sContent/_sContent.pug
+ 
+include ../blocks/sTrustUs/_sTrustUs.pug
+include ../blocks/sFirstMoney/_sFirstMoney.pug
+include ../blocks/sImportant/_sImportant.pug
+include ../blocks/sResults/_sResults.pug
+include ../blocks/sFreeAccess/_sFreeAccess.pug
+include ../blocks/sAuthor/_sAuthor.pug
+include ../blocks/sDoubt/_sDoubt.pug
+include ../blocks/footer/_footer.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= 'main.jpg'
+
+block title
+	- let  title = 'Главная'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	+header()
+		//- +top-nav()
+		+topLine
+	main
+		+headerBlock 
+		+sTrustUs
+		+sFirstMoney
+		+sImportant
+		+sResults
+		+sFreeAccess
+		+sAuthor
+		+sDoubt
+	+footer()
+      
+
+
+

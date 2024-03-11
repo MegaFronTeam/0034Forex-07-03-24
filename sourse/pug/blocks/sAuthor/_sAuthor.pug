@@ -1,0 +1,30 @@
+mixin sAuthor(data)
+	// start sAuthor
+	+b.SECTION.sAuthor.section#sAuthor&attributes(attributes)
+		+e.container.container-fluid
+			+e.wrap
+				+e.inner-wrap
+					img(src="img/sAuthor-bg-1.png", alt="").bg
+					img(src="img/sAuthor-img-1.png", alt="").img
+					+e.row.row
+						.col-lg-auto
+							+b.section-title
+								h3 Автор системы «Первые деньги на FOREX»
+						.col-lg
+							+e.item-wrap
+								mixin item(num, text)
+									+e.item
+										span!= num
+										p!= text
+								.row
+									.col-sm-6.col-lg-12
+										+item('С 2013', 'занимается трейдингом. Активно торговал на CME, FOREX, NYSE и&nbsp;OTC. В&nbsp;настоящее время работает преимущественно на&nbsp;рынке FOREX')
+									.col-sm-6.col-lg-12
+										+item('С 2014', 'продюсирует авторов в&nbsp;сфере трейдинга и инвестиций. Благодаря чему постоянно собирает все &laquo;сливки&raquo;&nbsp;&mdash; лучшие достижение и&nbsp;разработки от&nbsp;русскоговорящих экспертов на&nbsp;всех существующих финансовых рынках (фондовый, срочный, валютный, криптовалютный).')
+									.col-sm-6.col-lg-12
+										+item('С 2015', 'организует онлайн-тренинги по&nbsp;трейдингу и работает с&nbsp;новичками в&nbsp;качестве куратора. Умеет объяснять так, чтобы понял трёхлетний ребёнок. Адаптирует для новичков даже самые сложные торговые системы.')
+									.col-sm-6.col-lg-12
+										+item('С 2022', 'по&nbsp;просьбам клиентов разработал и&nbsp;запустил авторские программы обучения трейдингу на&nbsp;рынке FOREX. Использует в&nbsp;обучении особый подход, благодаря которому освоить торговлю на&nbsp;финансовых рынках может практически любой человек, независимо от&nbsp;пола, возраста, образования и&nbsp;профессии.')
+					+e.title Артём Дудкевич
+
+	// end sAuthor

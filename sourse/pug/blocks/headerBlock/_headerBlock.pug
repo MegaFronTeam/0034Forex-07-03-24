@@ -1,0 +1,31 @@
+mixin headerBlock()
+	// start headerBlock
+	+b.headerBlock.section#headerBlock&attributes(attributes)
+		+e.container.container
+			img(src="img/header-bg.png", alt="").bg
+			.row
+				.col-lg-7
+					h1 Первые деньги на 
+						span FOREX
+					+e.subtitle Получайте #[span 500 рублей] за каждые полчаса торговли!
+					p Зарегистрируйтесь прямо сейчас и&nbsp;получите пошаговый онлайн-курс, который проведёт Вас с&nbsp;нуля до&nbsp;первой прибыли на&nbsp;рынке FOREX
+					+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js Успейте получить бесплатно!
+					+e.timer-wrap
+						+e.timer-box.timer-box.timer-box-js
+							span.days 12
+							span.hours 20
+							span.minutes 20 
+							span.seconds 20
+						p Успейте до&nbsp;истечения таймера и&nbsp;получите БЕСПЛАТНЫЙ билет на&nbsp;ближайший вебинар Артема Дудкевича
+				.col-lg-5
+					+e.img
+						+img('img/header-img-sm.png')
+						+e.person-text
+							p Артем Дудкевич
+							span Автор курса
+					+e.person
+						img(src="img/header-img.png", alt="")
+						+e.person-text
+							p Артем Дудкевич
+							span Автор курса
+	// end headerBlock

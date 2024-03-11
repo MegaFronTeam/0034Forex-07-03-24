@@ -1,0 +1,26 @@
+mixin sFirstMoney(data)
+	// start sFirstMoney
+	+b.SECTION.sFirstMoney.section#sFirstMoney&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h3 Первые деньги на FOREX
+				p Пошаговый онлайн-курс с заданиями, обратной связью и закрытым сообществом
+			+e.row.row
+				mixin item(icon, title, text)
+					+e.item&attributes(attributes)
+						+e.title
+							+img(`img/svg/${icon}`)
+							h5!=title
+						p!= text
+				.col-md-6.col-xl-4
+					+item('sFirstMoney-icon-1.svg', 'Для абсолютных новичков', 'Даже если&nbsp;Вы впервые слышите такие термины как &laquo;валютная пара&raquo; или &laquo;японская свеча&raquo;, Вы&nbsp;очень быстро поймёте, как зарабатывать на рынке FOREX')
+					+item('sFirstMoney-icon-2.svg', 'Пошаговое обучение', 'Вы&nbsp;начнёте с&nbsp;элементарных основ, освоите все необходимые инструменты и&nbsp;за&nbsp;11&nbsp;шагов придёте к&nbsp;Вашим первым деньгам: 500 рублей за&nbsp;каждые полчаса торговли')
+					+item('sFirstMoney-icon-3.svg', 'Практические задания', 'Забудьте про скучную теорию. Абсолютно всё, что&nbsp;Вы узнаете на&nbsp;курсе, Вы&nbsp;будете тут&nbsp;же применять на&nbsp;практике. Выполняйте простые задания и&nbsp;двигайтесь дальше.')
+				.col-md-6.col-xl-4.order-xl-3
+					+item('sFirstMoney-icon-4.svg', 'Персональная поддержка', 'Помимо помощи от&nbsp;автора курса в&nbsp;закрытой группе в&nbsp;Инфоклубе, Вы&nbsp;(при необходимости) получите персональные консультации от&nbsp;специалистов Службы Заботы Инфо-ДВД. В&nbsp;том числе и&nbsp;по&nbsp;телефону!').ms-xl-auto
+					+item('sFirstMoney-icon-5.svg', 'Абсолютно бесплатно', 'Абсолютно всё, что описано на&nbsp;этом сайте&nbsp;&mdash; достанется Вам бесплатно и&nbsp;прямо сейчас: 11&nbsp;уроков с&nbsp;заданиями, пожизненным доступом к&nbsp;записям, без ограничений и&nbsp;&laquo;пробных периодов&raquo;').ms-xl-auto
+					+item('sFirstMoney-icon-6.svg', 'Уникальная стратегия', 'Вы&nbsp;получите уникальную авторскую торговую стратегию, на&nbsp;разработку которой методом &laquo;проб и&nbsp;ошибок&raquo; у&nbsp;Вас ушел&nbsp;бы не&nbsp;один год и&nbsp;десяток &laquo;слитых&raquo; депозитов').ms-xl-auto
+				+e.col.col-xl-4.order-xl-2
+					+e.bg-wrap
+						img(src='img/sFirstMoney-img-1.png' alt='').img
+	// end sFirstMoney

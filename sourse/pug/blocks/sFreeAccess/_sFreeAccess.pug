@@ -1,0 +1,25 @@
+mixin sFreeAccess(data)
+	// start sFreeAccess
+	+b.SECTION.sFreeAccess.section#sFreeAccess&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h3 Как получить #[span бесплатный доступ] к&nbsp;платформе за&nbsp;60&nbsp;секунд?
+			+e.arrow-wrap
+				+e.slider--js.swiper
+					.swiper-wrapper
+						mixin item(x)
+							.swiper-slide
+								+e.slide-wrap(href=`img/sFreeAccess-img-lg-${x}.jpg`, data-fancybox=`img-1`)
+									+pic(`sFreeAccess-img-${x}`)
+						- for (var x = 1; x < 6; x++)
+							+item(x)
+					.swiper-pagination
+				+arrow()
+			+e.timer-box.timer-box.timer-box-js2
+				span.days 12
+				span.hours 20
+				span.minutes 20 
+				span.seconds 20
+			+e.text Успейте зарегистрироваться до&nbsp;истечения таймера, и&nbsp;получите БЕСПЛАТНЫЙ билет на&nbsp;ближайший онлайн мастер-класс Артема Дудкевича
+			+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js  Успейте получить бесплатно!
+	// end sFreeAccess
