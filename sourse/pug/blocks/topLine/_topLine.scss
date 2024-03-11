@@ -14,9 +14,10 @@
 	}
 	p {
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
+    font-size: rem(11.5);
 		margin-bottom: 0;
-		line-height: 1.3em;
+		// line-height: 1.3em;
 		img {
 			flex: 0 0 auto;
 			width: 100%;
