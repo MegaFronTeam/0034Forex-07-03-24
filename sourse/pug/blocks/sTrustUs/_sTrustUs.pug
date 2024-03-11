@@ -3,23 +3,27 @@ mixin sTrustUs(data)
 	+b.SECTION.sTrustUs.section#sTrustUs&attributes(attributes)
 		+e.container.container-fluid
 			+e.wrap
-				img(src='img/coin.png' alt='').img
+				//- img(src='img/coin.png' alt='').img
 				+e.inner-wrap
 					+b.section-title
-						h3 Почему нам 
-							span можно верить
+						h3 ВОТ 
+							span ПОЧЕМУ
 					+e.row.row
-						mixin item(icon, text)
-							+e.col.col-12
+						+e.col.col-6
+						//- img(src='img/coin.png' alt='').img
+						+e.col.col-6
+							mixin item(title, text)
 								+e.item
-									+img(`img/svg/${icon}`)
-									+e.content
-										block
-										p!= text
-						+item('sTrustUs-icon-1.svg', 'Спрячьте Вашу банковскую карту. Вам не&nbsp;нужно вкладывать деньги, инвестировать в&nbsp;сомнительные проекты и&nbsp;вообще что-либо покупать, чтобы пройти у&nbsp;нас обучение')
-							h4 Это действительно #[span бесплатно]
-						+item('sTrustUs-icon-2.svg', 'И&nbsp;ни&nbsp;за&nbsp;что не&nbsp;отдадим им&nbsp;Ваш e-mail или номер телефона. Вы&nbsp;не&nbsp;увидите у&nbsp;нас рекламу брокеров, потому что мы&nbsp;не аффилированы ни&nbsp;с&nbsp;одним из&nbsp;них и&nbsp;не&nbsp;зарабатываем на&nbsp;этом')
-							h4 Мы #[span не «кормим»] брокеров
-						+item('sTrustUs-icon-3.svg', 'Изучив сегодня этот курс, Вы&nbsp;не&nbsp;заработаете завтра миллион долларов. И&nbsp;мы&nbsp;Вам этого не&nbsp;обещаем. А&nbsp;вот делать по&nbsp;500 рублей за&nbsp;каждые полчаса торговли&nbsp;&mdash; вполне реально!')
-							h4 Мы #[span реалисты] (и Вам советуем)
+									+e.head
+										+img('img/attention.png')
+										h4!= title
+									p!= text
+							+item('Это действительно бесплатно', 'Спрячьте Вашу банковскую карту. Вам не нужно вкладывать  деньги, инвестировать в сомнительные проекты  и вообще что-либо покупать, чтобы пройти курс')
+							+item('Мы — не брокеры', 'И&nbsp;ни&nbsp;за&nbsp;что не&nbsp;отдадим им&nbsp;Ваш e-mail или номер телефона. Вы&nbsp;не&nbsp;увидите у&nbsp;нас рекламу брокеров, потому что мы&nbsp;не аффилированы ни&nbsp;с&nbsp;одним из&nbsp;них и&nbsp;не&nbsp;зарабатываем на&nbsp;этом')
+							+item('Мы реалисты (и Вам советуем)', 'Изучив сегодня этот курс, Вы&nbsp;не&nbsp;заработаете завтра миллион долларов. И&nbsp;мы&nbsp;Вам этого не&nbsp;обещаем. А&nbsp;вот делать по&nbsp;500 рублей за&nbsp;каждые полчаса торговли&nbsp;&mdash; вполне реально!')
+							+e.btn-box
+								p Это пошаговый обучающий курс (видеоуроки + задания + поддержка), наполненный только практической информацией
+								.small #[span Регистрируйтесь сейчас и получите абсолютно бесплатный доступ к знаниям,] за которые в других местах у Вас потребуют десятки тысяч рублей.  Попробуйте и убедитесь сами:
+								+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js Кликните сюда, чтобы получить бесплатный доступ
+									+icon('arr-link')
 	// end sTrustUs
