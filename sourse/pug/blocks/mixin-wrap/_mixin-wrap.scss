@@ -127,13 +127,13 @@ h1, h2, h3, h4, h5, h6 {
 	--bs-btn-font-size: #{rem(24)};
 	--bs-btn-color: #fff;
 	--bs-btn-border-color: #{$primary};
-	--bs-btn-border-radius: 8px;
+	--bs-btn-border-radius: 16px;
 	--bs-btn-hover-color: #fff;
 	--bs-btn-active-color: #fff;
 
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
-	background-image: linear-gradient(180deg, #9CE90B 0%, #6EA305 100%);
-	box-shadow: 0px 4px 0px #548000 !important;
+	background-image: linear-gradient(180deg, #e90b0b 0%, #d90000 100%);;
+	box-shadow: 0px 4px 0px #970000 !important;
 	text-transform: uppercase;
 	transform: translateY(0);
 	@include mt;
