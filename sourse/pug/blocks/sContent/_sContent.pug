@@ -2,8 +2,16 @@ mixin sContent()
 	// start sContent
 	+b.SECTION.sContent.section#sContent&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 sContent
-				
 			+e.row.row
+				+e.col.col-lg-4
+					+b.section-title
+						h3 Будьте 
+							span осторожны
+						p В процессе просмотра курса Вы увидите уникальный способ быстрого увеличения баланса счёта
+						+e.figure-wrap #[span +445%]<br>за 2 месяца
+				+e.col.col-lg-8
+					+e.img-wrap(href='img/sContent-img-1.png' data-fancybox='gallery')
+						.img-wrap
+							+img('img/sContent-img-1.png')
+							+e.link.small + Увеличить скриншот
 	// end sContent

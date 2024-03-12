@@ -9,13 +9,13 @@
 		--sPB: #{rem(40)};
 	}
 	@include media-breakpoint-up(lg) {
-		--sPB: #{rem(0)};
+		--sPB: #{rem(26)};
 	}
 	&__container {
 		position: relative;
 		.bg {
 			position: absolute;
-			z-index: -1;
+			z-index: -2;
       top: 324px;
       left: -204px;
 			pointer-events: none;
@@ -34,7 +34,7 @@
 	&__person {
 		position: absolute;
 		display: none;
-		z-index: -1;
+		z-index: -2;
 		@include media-breakpoint-up(sm) {
 			display: block;
 			right: -19px;
@@ -69,8 +69,8 @@
 	&__person-text {
 		position: absolute;
 		max-width: rem(76);
-		bottom: 3%;
-    left: 50%;
+		bottom: 29%;
+    left: 39%;
 		transform: translateX(-50%);
 		@include media-breakpoint-up(sm) {
 			bottom: 59.4%;
@@ -107,6 +107,7 @@
     text-transform: uppercase;
     line-height: 1;
 		margin-bottom: rem(25);
+    max-width: rem(700);
 		@include media-breakpoint-up(lg) {
 			margin-bottom: rem(40);
 		}
@@ -185,6 +186,8 @@
 	}
 	&__img {
 		display: block;
+    position: relative;
+    z-index: -2;
 		@include media-breakpoint-up(sm) {
 			display: none;
 		}

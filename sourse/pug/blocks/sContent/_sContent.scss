@@ -2,8 +2,8 @@
 	// start .sContent
 	.sContent {
 	
-	// --sPT: #{rem()};
-	// --sPB: #{rem()};
+	--sPT: #{rem(72)};
+	--sPB: #{rem(65)};
 	// --sTPB: #{rem()};
 	&__row{
 		// --bs-gutter-x: #{rem()};
@@ -11,14 +11,42 @@
 
 	}
 	.section-title{
-		
+    max-width: rem(350);
+		h3 {
+			margin-bottom: rem(30);
+      text-transform: uppercase;
+      margin-bottom: rem(24);
+      // font-size: rem(48);
+      line-height: 100%;
+    }
+    p {
+      color: $gray-800;
+      font-weight: 500;
+      font-size: rem(26.5);
+      line-height: 100%;
+      margin-bottom: rem(32);
+    }
+    &__figure-wrap {
+      font-size: rem(19);
+      line-height: 165%;
+      span {
+        color: $primary;
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 90%;
+      }
+    }
 	}
 	&__col{
-
+    position: relative;
 	}
 	&__item{
 
 	}
+  &__link {
+    position: relative;
+    top: -20px;
+  }
 	&__slide{
 		height: auto;
 	}

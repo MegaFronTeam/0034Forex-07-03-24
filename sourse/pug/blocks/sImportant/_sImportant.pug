@@ -2,11 +2,14 @@ mixin sImportant(data)
 	// start sImportant
 	+b.SECTION.sImportant.section#sImportant&attributes(attributes)
 		+e.container.container
-			img(src="img/sImportant-bg-1.png", alt="").img
-			+b.section-title.text-center
-				h6 И самое главное…
-				+e.title 0,0%
-				.h2 РЕКЛАМЫ
-				p Это не&nbsp;очередная рекламная замануха. Наша цель&nbsp;&mdash; дать реальную пользу и&nbsp;довести Вас до&nbsp;первых заработков на&nbsp;финансовых рынках. Но&nbsp;предупреждаем: эмоции и&nbsp;результаты после бесплатного курса могут надолго затянуть Вас в&nbsp;наше сообщество успешных трейдеров и&nbsp;интернет-предпринимателей!
-				+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js  Получите бесплатный доступ
+			+e.row.row
+				+e.col.col-lg-6
+					+b.section-title
+						h6 И главное…
+						h3 #[span 0,0%] РЕКЛАМЫ
+						+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js Получите доступ бесплатно!
+							+icon('arr-link')
+				+e.col.col-lg-6
+						p #[span Это не&nbsp;очередная рекламная замануха.] Наш интерактивный курс — это&nbsp;не&nbsp;рекламное «завлечение». Мы не&nbsp;рекламируем брокеров, не&nbsp;заставляем Вас покупать наши платные курсы или торговые программы.
+						p  Просто попробуйте #[span «Пошаговый онлайн-курс с заданиями, обратной связью и закрытым сообществом»] и убедитесь в том, что у нас можно бесплатно получить то, за что в других местах с Вам попросят несколько  десятков тысяч рублей!
 	// end sImportant

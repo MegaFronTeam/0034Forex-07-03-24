@@ -4,25 +4,33 @@
 	--sPB: #{rem(40)};
 	--sTPB: #{rem(0)};
 	@include media-breakpoint-up(lg) {
-		--sPT: #{rem(107)};
-		--sPB: #{rem(64)};
+		--sPT: #{rem(86)};
+		--sPB: #{rem(40)};
 	}
-	&__container{
+  position: relative;
+	&__container {
 		position: relative;
-		.img {
-			position: absolute;
-			bottom: calc(var(--sPB) * -1);
-			left: 50%;
-			transform: translateX(-50%);
-			z-index: -1;
-		}
+    // border-top: 1px solid $gray-500;
+    padding-top: rem(36);
+    &::before {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $gray-500;
+    }
 	}
 	.section-title{
 		h6 {
-			font-family: $font-family-sans-serif;
+			color: $gray-800;
+      font-weight: 500;
+      font-size: rem(28);
+      line-height: 100%;
 			margin-bottom: rem(15);
 			@include media-breakpoint-up(lg) {
-				margin-bottom: rem(30.500);
+				margin-bottom: rem(16);
 			}
 		}
 		&__title {
@@ -32,28 +40,44 @@
 			color: $red;
 			line-height: 1;
 		}
-		.h2 {
-			margin-bottom: rem(35.500);
-			@include media-breakpoint-up(lg) {
-				margin-bottom: rem(45.500);
-			}
-		}
-		p {
-			max-width: rem(520);
-			margin-bottom: rem(25);
-			line-height: 1.3em;
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-			@include media-breakpoint-up(lg) {
-				margin-bottom: rem(35);
-			}
-		}
+		h3 {
+      margin-bottom: rem(40);
+    }
 		&__btn {
-			max-width: rem(295);
+      display: flex;
+      justify-content: space-between;
+			max-width: rem(360);
+      align-items: center;
+      gap: rem(8);
+      margin-bottom: rem(30);
 		}
 	}
-
+  p {
+    max-width: rem(545);
+    margin-bottom: rem(24);
+    line-height: 1.4;
+    span {
+      font-weight: 700;
+    }
+    @include media-breakpoint-up(lg) {
+      // margin-bottom: rem(24);
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $gray-200;
+    border-radius: 0 0 16px 16px;
+    z-index: -1;
+    @include media-breakpoint-up(sm) {
+      left: 8px;
+      width: calc(100% - 16px);
+    }
+  }
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

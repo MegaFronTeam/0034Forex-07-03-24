@@ -1,28 +1,27 @@
 mixin sResults(data)
 	// start sResults
 	+b.SECTION.sResults.section#sResults&attributes(attributes)
-		+e.container.container-fluid
+		+e.container.container
 			+e.wrap
 				+e.inner-wrap
 					+b.section-title
 						.row
 							.col-lg-6
-								h3 Какой конкретно #[span результат] Вы получите после обучения
-								p Посмотрите это короткое видео (2&nbsp;минуты) с&nbsp;примером того, как можно покрывать целые статьи семейного бюджета с&nbsp;помощью заработка на&nbsp;рынке FOREX!
+								h3 Оцените качество #[span прямо сейчас:]
+								p Посмотрите небольшой фрагмент вводного видео,  сразу после которого начнётся #[span САМОЕ ИНТЕРЕСНОЕ…]
+								+e.subtext Не пугайтесь непонятных терминов — Вы их все изучите в&nbsp;ходе курса. Цель данного видео: продемонстрировать общее качество и подачу
 							.col-lg-6 
 								+e.img-wrap(href='https://vimeo.com/767038346' data-fancybox='modal')
 									.img-wrap-center
 										+img('img/sResults-img-1.jpg')
 									+e.play-icon: +icon('play')
-								+e.subtext Не пугайтесь непонятных терминов — Вы их все изучите в ходе курса.<br>Цель данного видео: наглядно показать, как именно Вы будете зарабатывать!
-					h3 Посмотрите, какой результат&nbsp;Вы получите после каждого урока курса:
-					mixin ddItem(text, num)
-						+e.inner-wrap
-							+e.img-wrap
-								.img-wrap-center
-									+img(`img/sResults-img-${num}.png`)
-							p!= text
-					+ddGroup
+					//- mixin ddItem(text, num)
+					//- 	+e.inner-wrap
+					//- 		+e.img-wrap
+					//- 			.img-wrap-center
+					//- 				+img(`img/sResults-img-${num}.png`)
+					//- 		p!= text
+					//- +ddGroup
 						+ddGroupItem('Урок 1. ', 'Рынок FOREX и другие финансовые рынки', 'active')
 							+ddItem('На&nbsp;очень простых жизненных примерах&nbsp;Вы поймёте, какие бывают финансовые рынки и&nbsp;чем они отличаются друг от&nbsp;друга. Узнаете, как и&nbsp;для чего появился рынок форекс и&nbsp;в&nbsp;ч&euml;м его преимущества перед другими рынками.', 2)
 						+ddGroupItem('Урок 2. ', 'FOREX-брокеры. Открытие торгового счёта')
@@ -45,5 +44,5 @@ mixin sResults(data)
 							+ddItem('Буквально за&nbsp;несколько минут&nbsp;Вы освоите простую и&nbsp;прибыльную торговую стратегию. Вы&nbsp;поймёте, как уделять трейдингу всего полчаса в&nbsp;день, зарабатывать&nbsp;1% к&nbsp;капиталу каждый день и&nbsp;до&nbsp;20% в&nbsp;месяц!', 11)
 						+ddGroupItem('Урок 11. ', 'Что дальше?')
 							+ddItem('Вы&nbsp;увидите, как на&nbsp;Ваших глазах растёт торговый счёт! Увидите сделки с&nbsp;подробными комментариями, которые приносят десятки тысяч рублей за&nbsp;считанные дни. Вы&nbsp;поймёте, какие перспективы открывает для Вас рынок форекс, если изучить более продвинутую стратегию торговли и&nbsp;немного попрактиковаться.', 12)
-					+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js  Хотите такие результаты? Кликайте!
+					//- +e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js  Хотите такие результаты? Кликайте!
 	// end sResults
