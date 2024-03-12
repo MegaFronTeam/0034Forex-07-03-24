@@ -11,6 +11,7 @@ include ../blocks/sTrustUs/_sTrustUs.pug
 include ../blocks/sFirstMoney/_sFirstMoney.pug
 include ../blocks/sImportant/_sImportant.pug
 include ../blocks/sResults/_sResults.pug
+include ../blocks/sBenefits/_sBenefits.pug
 include ../blocks/sFreeAccess/_sFreeAccess.pug
 include ../blocks/sAuthor/_sAuthor.pug
 include ../blocks/sDoubt/_sDoubt.pug
@@ -25,23 +26,22 @@ block title
 	title= title
 block pagecontent
 	//- +mob-mnu()
-	
-	
 	+header()
 		//- +top-nav()
 		+topLine
 	main
-		+headerBlock 
+		+headerBlock
 		+sTrustUs
 		+sContent
 		+sFirstMoney
 		+sImportant
 		+sResults
+		+sBenefits
 		+sFreeAccess
 		+sAuthor
 		+sDoubt
 	+footer()
-      
+
 
 
 

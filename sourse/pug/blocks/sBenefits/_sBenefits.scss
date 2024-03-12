@@ -1,52 +1,54 @@
 
-	// start .sContent
-	.sContent {
-	
-	--sPT: #{rem(78)};
-	--sPB: #{rem(65)};
+	// start .sBenefits
+.sBenefits {
+	--sPT: #{rem(00)};
+	--sPB: #{rem(68)};
 	// --sTPB: #{rem()};
 	&__row{
-		// --bs-gutter-x: #{rem()};
+		--bs-gutter-x: #{rem(30)};
 		--bs-gutter-y: var(--bs-gutter-x);
+    margin-bottom: rem(58);
 
 	}
 	.section-title{
-    max-width: rem(350);
 		h3 {
-			margin-bottom: rem(30);
+      margin-bottom: rem(30);
       text-transform: uppercase;
-      margin-bottom: rem(24);
-      // font-size: rem(48);
+      margin-bottom: rem(72);
       line-height: 100%;
-    }
-    p {
-      color: $gray-800;
-      font-weight: 500;
-      font-size: rem(26.5);
-      line-height: 100%;
-      margin-bottom: rem(32);
-    }
-    &__figure-wrap {
-      font-size: rem(19);
-      line-height: 165%;
-      span {
-        color: $primary;
-        font-weight: 500;
-        font-size: 80px;
-        line-height: 90%;
-      }
     }
 	}
 	&__col{
-    position: relative;
+
 	}
 	&__item{
 
 	}
-  &__link {
-    position: relative;
-    top: -20px;
+  .benefit-card {
+    .icon {
+      font-size: rem(48);
+      fill: $primary;
+      margin-bottom: rem(20);
+      @include media-breakpoint-up(lg) {
+        margin-bottom: rem(40);
+      }
+    }
+    p {
+      span {
+        font-weight: 700;
+      }
+    }
   }
+  &__btn {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: rem(390);
+    display: flex;
+    font-size: rem(19);
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(8);
+	}
 	&__slide{
 		height: auto;
 	}
@@ -74,4 +76,4 @@
 	@include media-breakpoint-down(sm) {}
 	@include media-breakpoint-down(xs) {} 
 
-} // end.sContent
+} // end.sBenefits

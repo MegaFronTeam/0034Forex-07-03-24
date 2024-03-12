@@ -1,0 +1,29 @@
+mixin sBenefits()
+	// start sBenefits
+	+b.SECTION.sBenefits.section#sBenefits&attributes(attributes)
+		.container
+			+b.section-title
+				h3 Что конкретно Вы получите после  #[span прохождения курса]:
+			+e.row.row
+				.col-sm-6.col-lg
+					+b.benefit-card
+						+icon(`candle`)
+						p Вы узнаете, #[span как на самом деле] устроен и работает рынок FOREX
+				.col-sm-6.col-lg
+					+b.benefit-card
+						+icon(`money`)
+						p Вы узнаете о #[span новейшем быстром и легком способе] заработка на этом рынке — с&nbsp;нуля
+				.col-sm-6.col-lg
+					+b.benefit-card
+						+icon(`recession`)
+						p Вы узнаете, что такое трейдинг и как он позволяет  #[span зарабатывать ежедневно — почти на полном автопилоте!]
+				.col-sm-6.col-lg
+					+b.benefit-card
+						+icon(`transaction`)
+						p Вы узнаете #[span о причинах неудач 99% начинающих трейдинг], а также получите готовые решения этих проблем
+				.col-sm-6.col-lg
+					+b.benefit-card
+						+icon(`idea`)
+						p #[span Получите цельное знание] о&nbsp;том, как зарабатывать на сделках с валютой каждый день
+			+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js Начать обучаться прямо сейчас
+				+icon('arr-link')

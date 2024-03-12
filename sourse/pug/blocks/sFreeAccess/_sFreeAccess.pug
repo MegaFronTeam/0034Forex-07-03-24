@@ -2,8 +2,8 @@ mixin sFreeAccess(data)
 	// start sFreeAccess
 	+b.SECTION.sFreeAccess.section#sFreeAccess&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h3 Как получить #[span бесплатный доступ] к&nbsp;платформе за&nbsp;60&nbsp;секунд?
+			+b.section-title
+				h3 Как получить доступ #[span бесплатно]
 			+e.arrow-wrap
 				+e.slider--js.swiper
 					.swiper-wrapper
@@ -15,11 +15,6 @@ mixin sFreeAccess(data)
 							+item(x)
 					.swiper-pagination
 				+arrow()
-			+e.timer-box.timer-box.timer-box-js2
-				span.days 12
-				span.hours 20
-				span.minutes 20 
-				span.seconds 20
-			+e.text Успейте зарегистрироваться до&nbsp;истечения таймера, и&nbsp;получите БЕСПЛАТНЫЙ билет на&nbsp;ближайший онлайн мастер-класс Артема Дудкевича
-			+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js  Успейте получить бесплатно!
+			+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js Начать обучаться прямо сейчас
+				+icon('arr-link')
 	// end sFreeAccess

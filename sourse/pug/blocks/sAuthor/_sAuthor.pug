@@ -1,30 +1,40 @@
 mixin sAuthor(data)
 	// start sAuthor
 	+b.SECTION.sAuthor.section#sAuthor&attributes(attributes)
-		+e.container.container-fluid
-			+e.wrap
-				+e.inner-wrap
-					img(src="img/sAuthor-bg-1.png", alt="").bg
-					img(src="img/sAuthor-img-1.png", alt="").img
-					+e.row.row
-						.col-lg-auto
-							+b.section-title
-								h3 Автор системы «Первые деньги на FOREX»
-						.col-lg
-							+e.item-wrap
-								mixin item(num, text)
+		+e.container.container
+			//- +e.wrap
+			+e.inner-wrap
+				img(src="img/sAuthor-img-2.png", alt="").img
+				+e.row.row
+					.col-lg
+						+b.section-title
+							h3 #[span ЕВГЕНИЙ СТРИЖ]
+							p Автор курса
+					.col-lg-6
+						+e.item-wrap
+							.row
+								.col-sm-6.col-lg-6
 									+e.item
-										span!= num
-										p!= text
-								.row
-									.col-sm-6.col-lg-12
-										+item('С 2013', 'занимается трейдингом. Активно торговал на CME, FOREX, NYSE и&nbsp;OTC. В&nbsp;настоящее время работает преимущественно на&nbsp;рынке FOREX')
-									.col-sm-6.col-lg-12
-										+item('С 2014', 'продюсирует авторов в&nbsp;сфере трейдинга и инвестиций. Благодаря чему постоянно собирает все &laquo;сливки&raquo;&nbsp;&mdash; лучшие достижение и&nbsp;разработки от&nbsp;русскоговорящих экспертов на&nbsp;всех существующих финансовых рынках (фондовый, срочный, валютный, криптовалютный).')
-									.col-sm-6.col-lg-12
-										+item('С 2015', 'организует онлайн-тренинги по&nbsp;трейдингу и работает с&nbsp;новичками в&nbsp;качестве куратора. Умеет объяснять так, чтобы понял трёхлетний ребёнок. Адаптирует для новичков даже самые сложные торговые системы.')
-									.col-sm-6.col-lg-12
-										+item('С 2022', 'по&nbsp;просьбам клиентов разработал и&nbsp;запустил авторские программы обучения трейдингу на&nbsp;рынке FOREX. Использует в&nbsp;обучении особый подход, благодаря которому освоить торговлю на&nbsp;финансовых рынках может практически любой человек, независимо от&nbsp;пола, возраста, образования и&nbsp;профессии.')
-					+e.title Артём Дудкевич
+										p Непрерывно #[span занимается трейдингом с 2004 года] (работает на рынках FOREX, NYSE, CME, криптовалюты)
+								.col-sm-6.col-lg-6
+									+e.item
+										p Стандартный для Евгения заработок на рынке CME: #[span +$30.000 личной прибыли] на одной сделке
+										+e.A.link.small(data-fancybox="gal-3", href='img/@2x/rez2.jpg') Доказательства
+										+e.A.link.small(data-fancybox="gal-3", href='img/@2x/rez3.jpg')
+										+e.A.link.small(data-fancybox="gal-3", href='img/@2x/rez4.jpg')
+								.col-sm-6.col-lg-6
+									+e.item
+										p Начинал в 2003 году с абсолютного нуля, без связей и стартового капитала
+								.col-sm-6.col-lg-6
+									+e.item
+										p С 2011 года проводит эксклюзивное обучение в Инфо-ДВД
+										+e.A.link.small(data-fancybox="gal-1", href='img/@2x/2020-02-20_16-32-57.jpg') Доказательства
+								.col-sm-6.col-lg-6
+									+e.item
+										p Сторонник концепции «эффективного трейдинга»: #[span максимум прибыли при минимальных затратах времени и усилий]
+								.col-sm-6.col-lg-6
+									+e.item
+										p Евгений #[span сделал $248.000 чистой прибыли из&nbsp;$20.000] на&nbsp;крипто рынке
+										+e.A.link.small(data-fancybox="gal-3", href='img/@2x/statement.jpg') Доказательства
 
 	// end sAuthor
