@@ -2,22 +2,23 @@ mixin sDoubt(data)
 	// start sDoubt
 	+b.SECTION.sDoubt.section#sDoubt&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 Сомневаетесь, получится ли у Вас?
-				h3 Думаете, что трейдинг – это удел избранных?
-				p Это совсем не так! Десятки наших клиентов доказывают обратное своими быстрыми положительными результатами:
+			+b.section-title
+				h3 Сомневаетесь, что #[span у Вас получится?]
+				p Думаете заключать такие прибыльные сделки под силу лишь опытным трейдерам? #[span Вы ошибаетесь!] Десятки наших учеников на собственном примере ежедневно доказывают обратное:
 			+e.arrow-wrap
 				+e.slider--js.swiper
 					.swiper-wrapper
 						mixin item(x)
 							.swiper-slide
-								+e.slide-wrap(href=`img/sDoubt-img-lg-${x}.jpg`, data-fancybox=`gallery-1`)
+								+e.slide-wrap(href=`img/sDoubt-img-${x}.jpg`, data-fancybox=`gallery-1`)
 									.img-wrap-center
-										+pic(`sDoubt-img-${x}.jpg`)
-									+e.zoom: +icon('zoom')
-						- for (var x = 1; x < 12; x++)
+										+img(`img/sDoubt-img-${x}.jpg`)
+										//- +pic(`sDoubt-img-${x}.jpg`)
+									//- +e.zoom: +icon('zoom')
+						- for (var x = 1; x <= 17; x++)
 							+item(x)
 					.swiper-pagination
 				+arrow()
 			+e.btn.btn.btn-primary.btn-base(href="modal-call").link-modal-js  Кликните сюда, чтобы получить бесплатный доступ
+				+icon('arr-link')
 	// end sDoubt

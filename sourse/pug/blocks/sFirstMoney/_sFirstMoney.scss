@@ -1,10 +1,10 @@
 // start .sFirstMoney
 .sFirstMoney {
-	--sPT: #{rem(40)};
+	--sPT: #{rem(60)};
 	--sPB: #{rem(40)};
 	--sTPB: #{rem(40)};
 	@include media-breakpoint-up(lg) {
-		--sPT: #{rem(60)};
+		// --sPT: #{rem(60)};
 		--sPB: #{rem(10)};
 		--sTPB: #{rem(86)};
 	}

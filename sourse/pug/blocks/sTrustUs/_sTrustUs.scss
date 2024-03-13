@@ -13,7 +13,7 @@
     height: 100%;
     background: $gray-200;
     border-radius: 16px;
-    z-index: -1;
+    z-index: -3;
     @include media-breakpoint-up(sm) {
       left: 8px;
       width: calc(100% - 16px);
@@ -70,7 +70,7 @@
     bottom: 0;
     z-index: -1;
     display: none;
-    max-width: rem(510);
+    // max-width: rem(510);
     @include media-breakpoint-up(lg) {
       display: block;
       right: 44%;
@@ -80,6 +80,26 @@
     }
     @media (min-width: 1400px) {
       right: 46%;
+    }
+    img {
+      max-width: rem(510);
+      position: relative;
+      @media (min-width: 1400px) {
+        max-width: none;
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-60%);
+      left: 3%;
+      width: 580px;
+      height: 580px;
+      border-radius: 100%;
+      z-index: -2;
+      filter: blur(50px);
+      background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(224,228,234,1) 100%);
     }
   }
 	&__wrap {

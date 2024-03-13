@@ -1,11 +1,11 @@
 // start .sFreeAccess
 .sFreeAccess {
 	--sPT: #{rem(40)};
-	--sPB: #{rem(27)};
+	--sPB: #{rem(72)};
 	--sTPB: #{rem(26.500)};
 	@include media-breakpoint-up(lg){
 		--sPT: #{rem(84)};
-		--sPB: #{rem(72)};
+		// --sPB: #{rem(72)};
     --sTPB: #{rem(75)};
 	}
 	&__row{
@@ -21,8 +21,10 @@
 	}
 	&__arrow-wrap {
 		position: relative;
-		padding-right: var(--swiperArrowSize);
-		padding-left: var(--swiperArrowSize);
+    @include media-breakpoint-up(sm) {
+      padding-right: var(--swiperArrowSize);
+      padding-left: var(--swiperArrowSize);
+    }
 		margin-bottom: rem(20);
 		@include media-breakpoint-down(md) {
 			--swiperArrowSize: #{rem(30)};
@@ -92,10 +94,14 @@
 				font-size: rem(14);
 			}
 		}
+    display: none;
+    @include media-breakpoint-up(sm) {
+      display: flex;
+    }
 	}
 	.swiper-pagination {
 		&-bullet {
-			background-color: rgba($color: #434343, $alpha: .3);
+			background-color: rgba($color: #434343, $alpha: .2);
 			&-active {
 				background-color: $red;
 			}
