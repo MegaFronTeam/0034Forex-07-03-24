@@ -40,20 +40,21 @@
 		text-align: center;
 		.img {
       position: relative;
-      left: -28%;
+      left: -9%;
 			// width: 100%;
+      max-width: 110%;
 			// max-width: rem(613);
 			margin-top: rem(20);
 			@include media-breakpoint-up(xl) {
 				position: absolute;
-				top: -50px;
-        left: -25%;
+				// top: -50px;
+        left: -11%;
 				// right: rem(-60);
 				width: auto;
 				margin-top: 0;
 			}
       @include media-breakpoint-up(xxl) {
-        left: -12%;
+        left: -8%;
       }
 		}
 	}

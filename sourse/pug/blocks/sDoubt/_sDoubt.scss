@@ -44,7 +44,10 @@
 		// margin-right: auto;
 		// padding-right: var(--swiperArrowSize);
 		// padding-left: var(--swiperArrowSize);
-		padding-bottom: rem(30);
+		padding-bottom: rem(60);
+    @include media-breakpoint-up(sm) {
+      padding-bottom: rem(40);
+    }
 		@include media-breakpoint-up(lg){
 			padding-bottom: rem(57.500);
 		}
@@ -134,6 +137,7 @@
     }
 	}
 	.swiper-pagination {
+
 		&-bullet {
 			background-color: rgba($color: #434343, $alpha: .2);
 			&-active {

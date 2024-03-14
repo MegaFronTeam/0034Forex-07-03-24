@@ -11,16 +11,17 @@ mixin footer()
 								.footer__txt.footer__txt--h6
 									p
 										script.
+
 											function InfoDVDCurrentYear(year) {
 												var cur = new Date();
 												if (cur.getFullYear() != year)
 													document.write('© ' + year + '&mdash;' + cur.getFullYear() + " ");
 												else document.write(year);
 											}
-											InfoDVDCurrentYear('2008 '); 
+											InfoDVDCurrentYear('2008');
 										| Издательство #[a(href='//www.info-dvd.ru/?utm_source=footer_link'  target='_blank') Инфо-ДВД] <br>
 										| Проект #[a(href='//www.infoclub.info/'  target='_blank') «Инфоклуб»]<br>
-										| #[script(src='//info-dvd.ru/codes/js/legal.utf8.js')]
+										| #[script(src='//info-dvd.ru/js/legal.utf8.js')]
 								.footer__txt
 									p
 										a.tdu(href='//info-dvd.ru/professional/', target='_blank', title='экспертам-авторам (инфо-продюсирование)')
@@ -38,12 +39,13 @@ mixin footer()
 									h6 Служба поддержки:
 									p
 										a(href='//info.support-desk.ru/form', target='_blank', title='Задать свой вопрос') Задать свой вопрос
+										br
 										a(href='//info.support-desk.ru/?base=1', target='_blank' title='Частые вопросы и ответы на них') Частые вопросы и ответы на них
 								.footer__txt.text-lg-end
 									h6 Позвоните нам:
 									p
 										span
-											script(   src='//info-dvd.ru/codes/js/telephone-number.js')
+											script(   src='//info-dvd.ru/js/telephone-number.js')
 										br
 										| или 
 										a.tdu(href='//info-dvd.ru/support/apply/', target='_blank') оставьте свой номер 
