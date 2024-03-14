@@ -44,6 +44,12 @@
 			padding: rem(56) rem(20) rem(64);
 		}
 	}
+  &__txt--support {
+    p {
+      display: inline-block;
+      max-width: rem(320);
+    }
+  }
 	&__inner-wrap {
 		position: relative;
 		z-index: 1;
